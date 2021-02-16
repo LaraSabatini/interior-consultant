@@ -53,6 +53,10 @@
             font-weight: 700;
             border-bottom: 1px solid white;
         }
+
+        .close {
+            visibility: hidden;
+        }
     }
 
 }
@@ -167,6 +171,7 @@ footer {
 @media screen and (max-width: 420px) {
 
     .navbar {
+
         .logo {
             margin-left: 0%;
         }
@@ -175,7 +180,7 @@ footer {
             display: none;
             width: 100%;
             flex-direction: column;
-            padding-top: 20px;
+            padding-top: 200px;
 
             li {
                 padding-bottom: 40px;
@@ -185,17 +190,29 @@ footer {
                 padding-bottom: 0px;
                 margin-bottom: 40px;
             }
+
+            .close {
+                visibility: visible;
+                margin-top: -225px;
+                padding-bottom: 200px;
+                margin-left: 360px;
+            }
         }
 
         .links.show {
             display: flex;
+            padding-bottom: 500px;
         }
 
+        .links.hide {
+            display: none;
+        }
 
         .hamburguer {
             cursor: pointer;
             display: block;
             border: none;
+            margin-left: 0px;
         }
     }
 

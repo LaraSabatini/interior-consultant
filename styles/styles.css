@@ -66,6 +66,10 @@
   border-bottom: 1px solid white;
 }
 
+.navbar .links .close {
+  visibility: hidden;
+}
+
 .container {
   margin-top: 170px;
   display: -webkit-box;
@@ -185,7 +189,7 @@ footer {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding-top: 20px;
+    padding-top: 200px;
   }
   .navbar .links li {
     padding-bottom: 40px;
@@ -194,15 +198,26 @@ footer {
     padding-bottom: 0px;
     margin-bottom: 40px;
   }
+  .navbar .links .close {
+    visibility: visible;
+    margin-top: -225px;
+    padding-bottom: 200px;
+    margin-left: 360px;
+  }
   .navbar .links.show {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    padding-bottom: 500px;
+  }
+  .navbar .links.hide {
+    display: none;
   }
   .navbar .hamburguer {
     cursor: pointer;
     display: block;
     border: none;
+    margin-left: 0px;
   }
   .container {
     -webkit-box-orient: vertical;
