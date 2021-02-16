@@ -16,15 +16,11 @@
 /*Desktop 1366*/
 
 .navbar {
-    .hamburguer, .close {
-        display: none;
-    }
-
     padding: 20px;
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     justify-content:space-between;
-    flex-wrap: nowrap;
 
     .logo {
         font-family: Crimson Pro;
@@ -35,18 +31,27 @@
         margin-left: 5%;
     }
 
+    .hamburguer {
+        display: none;
+    }
+
     .links {
         margin-right: 2%;
-        width: 600px;
+        width: 50%;
         display: flex;
         justify-content: space-around;
+        align-items: center;
         
-        p {
-            text-decoration: none;
-            display: inline;
+        li {
+            list-style: none;
+            display: block;
             font-family: Montserrat;
             font-size: 18px;
-            
+        }
+
+        .underline {
+            font-weight: 700;
+            border-bottom: 1px solid white;
         }
     }
 
@@ -156,3 +161,105 @@ footer {
     margin-left: 43%;
     padding-bottom: 20px;
 }
+
+/*Mobile 412*/
+
+@media screen and (max-width: 420px) {
+
+    .navbar {
+        .logo {
+            margin-left: 0%;
+        }
+
+        .links {
+            display: none;
+            width: 100%;
+            flex-direction: column;
+            padding-top: 20px;
+
+            li {
+                padding-bottom: 40px;
+            }
+
+            .underline {
+                padding-bottom: 0px;
+                margin-bottom: 40px;
+            }
+        }
+
+        .links.show {
+            display: flex;
+        }
+
+
+        .hamburguer {
+            cursor: pointer;
+            display: block;
+            border: none;
+        }
+    }
+
+    .container {
+        flex-direction: column;
+        justify-items: center;
+
+        .title {
+            width: 274px;
+            margin-left: 20px;
+            margin-top: -150px;
+
+            h1 {
+                font-size: 36px;
+            }
+
+            span, button {
+                font-size: 14px;
+                line-height: 17px;
+            }
+
+            img {
+                margin-left: 90px;
+                margin-top: -17px;
+            }
+        }
+
+        .banner {
+            margin-left: -10px;
+            margin-top: 37px;
+
+            img {
+                width: 351px;
+                height: 264px;
+            }
+
+            .description {
+                margin-left: 60px;
+                width: 300px;
+                height: 138px;
+
+                img {
+                    width: 36px;
+                    height: 36px;
+                }
+
+                h4 {
+                    font-size: 12px;
+                    margin-top: -40px;
+                }
+
+                span {
+                    font-size: 10px;
+                    margin-top: 5px;
+                }
+
+                h3 {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+
+    footer {
+        margin-left: 20%;
+    }
+}    

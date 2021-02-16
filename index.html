@@ -10,22 +10,24 @@
 <body>
 
   <nav class="navbar">
-    <!--For mobile-->
-    <button class="hamburguer"><img src="images/menu-white-18dp.svg" alt="Menu"></button>
-    <button class="close"><img src="images/close-white-18dp.svg" alt=""></button>
-
+    
     <p class="logo">THIS INTERIOR</p>
 
-    <section class="links">
-      <p><b>Home</b></p>
-      <p>Collection</p>
-      <p>About</p>
-      <p>Contact</p>
-    </section>
+    <button class="hamburguer" id="hamburguer">
+      <img  class="fas fa-bars" src="images/menu-white-18dp.svg" alt="">
+    </button>
+
+    <ul class="links" id="nav-ul">
+      <li class="underline">Home</li>
+      <li>Collection</li>
+      <li>About</li>
+      <li>Contact</li>
+    </ul>
 
   </nav>
 
   <main class="container">
+
     <section class="title">
       <h1>Modern Interior</h1>
       <span>A full-Service residential & commercial interior design and staging company offering professional organizing & eco-services.</span>
@@ -43,11 +45,13 @@
         <h3>Designed in 2020 by Apza Webber</h3>
       </div>
     </section>
+
   </main>
 
   <footer>
     <p>Lara Sabatini @ DevChallenges.io</p>
   </footer>
 
+  <script src="app.js"></script>
 </body>
 </html>
